@@ -24,16 +24,16 @@ public class MainIntroActivity extends IntroActivity {
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
-                .description(R.string.description)
+                .description(R.string.description2)
                 .image(R.drawable.pb1)
-                .background(R.color.black)
+                .background(R.color.Pink)
                 .backgroundDark(R.color.Purple)
                 .build());
 
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
-                .description(R.string.description)
+                .description(R.string.description3)
                 .image(R.drawable.pb3)
                 .background(R.color.black)
                 .backgroundDark(R.color.Purple)
@@ -42,9 +42,9 @@ public class MainIntroActivity extends IntroActivity {
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
-                .description(R.string.description)
+                .description(R.string.description4)
                 .image(R.drawable.pb4)
-                .background(R.color.black)
+                .background(R.color.Purple)
                 .backgroundDark(R.color.Purple)
                 .build());
 
