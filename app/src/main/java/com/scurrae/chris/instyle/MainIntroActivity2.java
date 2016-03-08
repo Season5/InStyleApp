@@ -1,5 +1,6 @@
 package com.scurrae.chris.instyle;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.github.paolorotolo.appintro.AppIntro;
@@ -17,6 +18,7 @@ public class MainIntroActivity2 extends AppIntro{
         // Add your slide's fragments here.
         // AppIntro will automatically generate the dots indicator and buttons.
         addSlide(FragGetter.newInstance(R.layout.first_fragment));
+        addSlide(FragGetter.newInstance(R.layout.second_fragment));
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
@@ -24,12 +26,14 @@ public class MainIntroActivity2 extends AppIntro{
 
         // OPTIONAL METHODS
         // Override bar/separator color.
-//        setBarColor(Color.parseColor("#3F51B5"));
-//        setSeparatorColor(Color.parseColor("#2196F3"));
+        setBarColor(Color.parseColor("#3F51B5"));
+        setSeparatorColor(Color.parseColor("#2196F3"));
 
         // Hide Skip/Done button.
-        showSkipButton(false);
-        setProgressButtonEnabled(false);
+        showSkipButton(true);
+        setProgressButtonEnabled(true);
+
+        setBarColor(0000);
 
         // Turn vibration on and set intensity.
         // NOTE: you will probably need to ask VIBRATE permisssion in Manifest.
