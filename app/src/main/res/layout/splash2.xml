@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<com.lighters.cubegridlibrary.view.CubeGridFrameLayout-->
+        <!--android:id="@+id/fl_cube_grid"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--app:fillColor="#0f0"-->
+        <!--app:loopCount="10"-->
+        <!--app:roundCornerSize="6dp"-->
+        <!--android:layout_centerInParent="true"/>-->
+    <!--<com.lighters.cubegridlibrary.view.CubeGridImageView-->
+        <!--android:id="@+id/iv_cube_grid"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:padding="12dp"-->
+        <!--android:src="@drawable/marvel_loader"-->
+        <!--app:fillColor="#f00"-->
+        <!--app:loopCount="10"-->
+        <!--app:roundCornerSize="6dp"-->
+        <!--android:layout_centerInParent="true"/>-->
+</RelativeLayout>
