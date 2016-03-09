@@ -4,4 +4,13 @@
     <string name="description3">Men and women alike are thrilled with their latest garment, although the transparent bags leave absolutely nothing to the imagination.</string>
     <string name="description2">People are stripping naked and posting photos of themselves wearing nothing but a plastic bag. So, would you try???</string>
     <string name="description">A new bizarre fashion trend suggests you may have been overlooking the ultimate clothing item, despite unwittingly bringing it home with you after every shopping trip.</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="title_activity_rotate">RotateActivity</string>
+    <string name="title_activity_newton_cradle">NewtonCradleActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
