@@ -3,6 +3,8 @@ package com.scurrae.chris.instyle;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.widget.Toast;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
@@ -28,31 +30,37 @@ public class MainIntroActivity2 extends AppIntro{
 
         // OPTIONAL METHODS
         // Override bar/separator color.
-        setBarColor(Color.parseColor("#3F51B5"));
-        setSeparatorColor(Color.parseColor("#2196F3"));
+//        setBarColor(Color.parseColor("#3F51B5"));
+        setSeparatorColor(Color.parseColor("#000000"));
 
         // Hide Skip/Done button.
         showSkipButton(true);
         setProgressButtonEnabled(true);
 
-        setBarColor(0000);
 
         // Turn vibration on and set intensity.
-        // NOTE: you will probably need to ask VIBRATE permisssion in Manifest.
+        // NOTE: you will probably need to ask VIBRATE permission in Manifest.
         setVibrate(true);
         setVibrateIntensity(30);
+    }
+    public void Skip(){
+        Toast.makeText(getBaseContext(), "Skipped", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, MainIntroActivity.class);
+        startActivity(i);
     }
 
     @Override
     public void onSkipPressed() {
         // Do something when users tap on Skip button.
-        startActivity(new Intent(getApplicationContext(), MainIntroActivity.class));
+        Skip();
 
     }
 
     @Override
     public void onDonePressed() {
         // Do something when users tap on Done button.
+        Toast.makeText(getBaseContext(), "Done", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getBaseContext(), Splash.class));
     }
 
     @Override
@@ -63,6 +71,7 @@ public class MainIntroActivity2 extends AppIntro{
     @Override
     public void onNextPressed() {
         // Do something when users tap on Next button.
+        Toast.makeText(getBaseContext(), "Next", Toast.LENGTH_SHORT).show();
     }
 
 }

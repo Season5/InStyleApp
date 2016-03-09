@@ -2,6 +2,7 @@ package com.scurrae.chris.instyle;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,13 +20,13 @@ public class Splash extends Activity{
         setContentView(R.layout.splash);
 
         LoadingView mLoadingView = (LoadingView) findViewById(R.id.loading_view);
-        mLoadingView.addAnimation(000000,
+        mLoadingView.addAnimation(Color.parseColor("#000000"),
                 R.drawable.pb1, LoadingView.FROM_BOTTOM);
-        mLoadingView.addAnimation(444444,
+        mLoadingView.addAnimation(Color.parseColor("#000000"),
                 R.drawable.pb2, LoadingView.FROM_TOP);
-        mLoadingView.addAnimation(777777,
+        mLoadingView.addAnimation(Color.parseColor("#000000"),
                 R.drawable.pb3, LoadingView.FROM_LEFT);
-        mLoadingView.addAnimation(999999,
+        mLoadingView.addAnimation(Color.parseColor("#000000"),
                 R.drawable.pb4, LoadingView.FROM_RIGHT);
 
 
