@@ -6,14 +6,15 @@
     android:background="@color/Purple">
 
     <io.saeid.fabloading.LoadingView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
         android:id="@+id/loading_view"
-        android:layout_centerInParent="true"
         app:mfl_duration="1250"
         app:mfl_repeat="4"
         android:scaleY="1.5"
         android:scaleX="1.5"
-        />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp" />
 
 </RelativeLayout>
