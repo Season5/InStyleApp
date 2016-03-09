@@ -47,7 +47,7 @@ public class MainIntroActivity2 extends AppIntro{
     }
     public void Skip(){
         Toast.makeText(getBaseContext(), "Skipped", Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(this, MainIntroActivity.class);
+        Intent i = new Intent(this, Landing.class);
         startActivity(i);
     }
 
