@@ -28,6 +28,8 @@ public class MainIntroActivity2 extends AppIntro{
 //        addSlide(AppIntroFragment.newInstance(R.string.app_name, R.string.description,
 //                R.drawable.pb1, R.color.Purple));
 
+        showStatusBar(true);
+
         // OPTIONAL METHODS
         // Override bar/separator color.
 //        setBarColor(Color.parseColor("#3F51B5"));
@@ -35,13 +37,13 @@ public class MainIntroActivity2 extends AppIntro{
 
         // Hide Skip/Done button.
         showSkipButton(true);
-        setProgressButtonEnabled(true);
+//        setProgressButtonEnabled(true);
 
 
         // Turn vibration on and set intensity.
         // NOTE: you will probably need to ask VIBRATE permission in Manifest.
-        setVibrate(true);
-        setVibrateIntensity(30);
+//        setVibrate(true);
+//        setVibrateIntensity(30);
     }
     public void Skip(){
         Toast.makeText(getBaseContext(), "Skipped", Toast.LENGTH_SHORT).show();
@@ -59,8 +61,7 @@ public class MainIntroActivity2 extends AppIntro{
     @Override
     public void onDonePressed() {
         // Do something when users tap on Done button.
-        Toast.makeText(getBaseContext(), "Done", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(getBaseContext(), Splash.class));
+         Skip();
     }
 
     @Override
@@ -74,5 +75,10 @@ public class MainIntroActivity2 extends AppIntro{
         Toast.makeText(getBaseContext(), "Next", Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
 }
 

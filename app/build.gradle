@@ -25,4 +25,5 @@ dependencies {
     compile 'com.heinrichreimersoftware:material-intro:1.1'
     compile 'com.github.paolorotolo:appintro:3.4.0'
     compile 'io.saeid:fab-loading:0.6.0'
+    compile 'com.github.david-wei:CubeGrid:1.0.1'
 }
