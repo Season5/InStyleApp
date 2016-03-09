@@ -1,5 +1,6 @@
 package com.scurrae.chris.instyle;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -17,12 +18,13 @@ public class MainIntroActivity2 extends AppIntro{
 
         // Add your slide's fragments here.
         // AppIntro will automatically generate the dots indicator and buttons.
-        addSlide(FragGetter.newInstance(R.layout.first_fragment));
-        addSlide(FragGetter.newInstance(R.layout.second_fragment));
+        addSlide(SimpleSlide.newInstance(R.layout.first_fragment));
+        addSlide(SimpleSlide.newInstance(R.layout.second_fragment));
 
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
-//        addSlide(AppIntroFragment.newInstance(title, description, image, background_colour));
+//        addSlide(AppIntroFragment.newInstance(R.string.app_name, R.string.description,
+//                R.drawable.pb1, R.color.Purple));
 
         // OPTIONAL METHODS
         // Override bar/separator color.
@@ -44,6 +46,8 @@ public class MainIntroActivity2 extends AppIntro{
     @Override
     public void onSkipPressed() {
         // Do something when users tap on Skip button.
+        startActivity(new Intent(getApplicationContext(), MainIntroActivity.class));
+
     }
 
     @Override

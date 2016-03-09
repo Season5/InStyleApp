@@ -12,21 +12,21 @@ import android.view.ViewGroup;
 /**
  * Created by chris on 3/8/16.
  */
-public class FragGetter extends Fragment {
+public class SimpleSlide extends Fragment {
     private static  final String ARG_LAYOUT_RES_ID = "layoutResId";
 
-    public static FragGetter newInstance(int layoutResId){
-        FragGetter fragGetter = new FragGetter();
+    public static SimpleSlide newInstance(int layoutResId){
+        SimpleSlide simpleSlide = new SimpleSlide();
 
         Bundle args = new Bundle();
         args.putInt(ARG_LAYOUT_RES_ID, layoutResId);
-        fragGetter.setArguments(args);
+        simpleSlide.setArguments(args);
 
-        return fragGetter;
+        return simpleSlide;
     }
     private int layoutResId;
 
-    public FragGetter(){}
+    public SimpleSlide(){}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

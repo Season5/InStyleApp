@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Purple">
+
+    <io.saeid.fabloading.LoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_view"
+        android:layout_centerInParent="true"
+        app:mfl_duration="1250"
+        app:mfl_repeat="4"
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        />
+
+</RelativeLayout>
